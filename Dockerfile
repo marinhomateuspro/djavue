@@ -1,7 +1,8 @@
 FROM python:3.6-alpine
 
-RUN apk add openrc bash curl vim nano git zip unzip nginx make gcc g++ libc-dev linux-headers nodejs npm postgresql-libs musl-dev postgresql-dev && \
-    mkdir /run/nginx && \
+RUN apk add  --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.14/main/ nodejs=14.18.1-r0
+RUN apk add openrc bash curl vim nano git zip unzip nginx make gcc g++ libc-dev linux-headers npm postgresql-libs musl-dev postgresql-dev && \
+    mkdir -p /run/nginx && \
     pip install uwsgi uwsgitop
 
 # Replace shell with bash so we can source files
