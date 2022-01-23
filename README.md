@@ -25,6 +25,8 @@ dk bash  # starts bash inside "djavue" container
 ./manage.py createsuperuser  # creates an application user in the database
 ```
 
+
+
 What is happenning:
 
 * `dev.sh` is a collection of useful bash functions for this project's development environment. You're encouraged to look inside and see how that works, and add more as the project progresses.
