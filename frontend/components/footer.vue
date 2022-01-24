@@ -1,8 +1,8 @@
 <template>
-  <v-footer color="blue-grey" class="white--text" app>
-    <span>Vuetify</span>
+  <v-footer app>
     <v-spacer />
-    <span>&copy; 2017</span>
+    <span> Mateus Marinho &copy; {{ new Date().getFullYear() }}</span>
+    <v-spacer />
   </v-footer>
 </template>
 
